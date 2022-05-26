@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2_re</title>
+</head>
+<body>
+    <!--
+        input checkbox의 id와 label의 for가 연동된다. 같은 값이면 연동
+    -->
+    <form action="">
+    <input type="checkbox" name="hobby" value="game" id="game">
+    <label for="game">게임</label>
+    <input type="checkbox" name="hobby" id="hiking">
+    <label for="hiking">등산</label>
+    <br>
+    아이디 <input type="text">
+    가입 약관 동의 여부 : 
+    <input type="radio" name="agree" value="yes">예
+    <input type="radio" name="agree" value="no">아니오
+    <br>
+    <input type="date">
+    <br>
+    <input type="file">
+    <br>
+    색상 선택 : <input type="color" name="col">
+    <br>
+    슬라이더 : <input type="range" value="50">
+    <br>
+    수량 : <input type="number" step="3" max="30" min="-30">
+    <br>
+    <select name="tel" id=""><!--value는 전송하는 값이고 option 사이의 값이 화면에 표시된다.-->
+        <option value="010">010</option>
+        <option value="011">011</option>
+        <option value="016">016</option>
+        <option value="017">017</option>
+        <option value="019">019</option>
+    </select><br>
+    <textarea name="textpan" id="" cols="30" rows="10" placeholder="hello world"></textarea>
+    <button>제출</button>
+    </form>
+</body>
+</html>
