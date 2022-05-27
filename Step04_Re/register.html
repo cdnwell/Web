@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+</head>
+<body>
+    <h1>회원가입 페이지</h1>
+    <table>
+        <tr>
+            <td>
+                아이디
+            </td>
+            <td>
+                <input type="text" placeholder="아이디 입력하세요">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                암호
+            </td>
+            <td>
+                <input type="password" placeholder="암호 입력하세요">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                암호 확인
+            </td>
+            <td>
+                <input type="password" placeholder="암호를 한번더 입력하세요">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                이름
+            </td>
+            <td>
+                <input type="text" placeholder="이름 입력하세요">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                연락처
+            </td>
+            <td>
+                <select name="tel">
+                    <option value="1">010</option>
+                    <option value="2">011</option>
+                    <option value="3">013</option>
+                    <option value="4">017</option>
+                </select>
+                <input type="text">
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                이메일
+            </td>
+            <td>
+                <input type="text">@
+                <select name="email">
+                    <option value="0">이메일 주소를 선택하세요</option>
+                    <option value="1">naver.com</option>
+                    <option value="2">hanmail.net</option>
+                    <option value="3">gmail.com</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                메일링 서비스 동의
+                <input type="checkbox" id="check">
+                <label for="check">동의</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                약관동의
+            </td>
+            <td>
+                <input type="radio" name="agree" id="yes">
+                <label for="yes">예</label>
+                <input type="radio" name="agree" id="no" checked>
+                <label for="no">아니오</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button>회원가입</button>
+                <button>초기화</button>
+                <button>취소</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
