@@ -1,0 +1,66 @@
+font-style : italic;
+font-weight : bold;	(거의 normal 과 bold만 쓰인다.)
+font-family : '바탕', '궁서';	
+(첫번째 폰트가 없으면 두번째 폰트가 적용된다.)
+font-size : 2em;	(부모 요소의 2배)	
+(부모 요소에서 적용된 글꼴 크기를 기준으로 비율로 계산해서
+크기를 지정)
+font-size : 2rem	(조상의 글꼴 크기를 기준으로 비율 계산)
+@font-face{
+	font-family : '정할_폰트_이름'
+	src : url( url주소 );
+}
+text-decoration : underline;
+text-decoration : line-through;
+text-decoration : none;	(밑줄을 없앨때 주로 사용)
+text-decoration-color : yellow;
+text-align : center;
+text-align : right(left);
+text-align : justify;
+border-collapse : collapse;
+border : 1px solid black;
+color : rgb(255,0,0);		(폰트 색상 빨간색)
+<span> inline 단위, 글자 단위로 취급
+<div> block 단위, block 단위로 취급
+*{
+	전체 선택자 -> *
+}
+margin : 10px;	(가장 바깥 여백)
+padding : 10px;	(글과 가장 가까운 여백)
+
+background-color : red;	(블록의 바탕색)
+list-style-image : url( url주소 );
+list-style-position : inside;	(안쪽으로 들여쓰기)
+list-style-type : decimal(십진법), lower-roman(로마숫자 소문자)
+
+caption-side : bottom(top);
+border-top : 1px solid black;
+border-bottom : 1px solid black;
+
+width : 100px;
+height : 100px;
+
+--text-overflow--
+overflow : hidden;
+white-space : nowrap;
+--> overflow + white-space = text-overflow
+(앞의 두 조건이 있어야 된다.)
+text-overflow : ellipsis;	(... 처리)
+		  clip		(자르기)
+text-shadow : 0px 0px 4px #ffff00, 0px 2px 4px #ffd80e,
+		0px 4px 4px #ffb039, 0px 6px 4px #ff0000;
+(text-shadow는 중첩이 가능하다)
+white-space : pre-line;		연속 공백 X, 엔터,br로 줄바꿈
+					가로 길이에 따라 줄바꿈 O
+		pre;			연속 공백 O, 엔터,br로 줄바꿈
+					가로 길이에 따라 줄바꿈 X
+		pre-wrap;		연속 공백 O, 엔터,br로 줄바꿈
+					가로 길이에 따라 줄바꿈 O
+		break-spaces;	pre-wrap과 동일하지만
+					연속 공백이 줄 끝 이상이 되면 줄바꿈
+
+word-break : break-all		글자사이에도 줄바꿈(기본값)
+	       : keep-all		단어사이를 끊지 않고, 단어로 줄바꿈
+
+word-spacing : 20px;		단어 간격 (스페이스 바 간격)
+letter-spacing : 10px;		글자 간격
