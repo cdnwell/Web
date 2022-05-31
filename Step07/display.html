@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        li{
+            border : 1px solid black;
+            width: 100px;
+            text-align: center;
+            /* 
+                태그를 inline으로 바꿔주겠다.
+                inline = 글자 취급
+                inline = width 안됨 ,height도 
+                display: inline;
+            */
+
+            /* 
+                inline이랑 block의 성질 모두 가지고 있게 만듦
+                inline = 글자취급 (text 함수 가능)
+                block = block취급 (width, height 가능)
+                display : inline-block;
+                가장 자주 쓰임
+            */
+            display: inline-block;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .img{
+            display : none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        ul : 블록태그
+        li : 블록태그
+     -->
+    <ul>
+        <li><a href="#" class="menu_a">항목1</a></li>
+        <li><a href="#" class="menu_a">항목2</a></li>
+        <li><a href="#" class="menu_a">항목3</a></li>
+        <li><a href="#" class="menu_a">항목4</a></li>
+        <li><a href="#" class="menu_a">항목5</a></li>
+    </ul>
+    <hr>
+    <!-- 
+        display : none >>> 영역도 없앰
+        visibility : hidden >>> 영역은 안없애고 태그만 안보이게 함
+     -->
+    <h2>display : none, visibility : hidden 차이</h2>
+    <img src="img/tree.jpg" class="img">
+    <img src="img/tree.jpg">
+</body>
+</html>

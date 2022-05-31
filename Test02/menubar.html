@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴바</title>
+    <style>
+        *{
+            margin : 0px;
+            padding : 0px;
+        }
+        ul{
+            width: 800px;
+            font-size: 0px;
+            margin: 100px auto;
+            list-style-type: none;
+            text-align: center;
+        }
+        li{
+            background-color: gray;
+            display: inline-block;
+            font-size : 20px;
+            line-height: 20px;
+            padding : 20px 0;
+        }
+        a{
+            width: 150px;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .left{
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .right{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <ul>
+            <li class="left"><a href="#">HOME</a></li>
+            <li>|</li>
+            <li><a href="#">회사소개</a></li>
+            <li>|</li>
+            <li><a href="#">브로슈어</a></li>
+            <li>|</li>
+            <li><a href="#">QnA</a></li>
+            <li>|</li>
+            <li class="right"><a href="#">오시는길</a></li>
+        </ul>
+    </table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경</title>
+    <style>
+        div{
+            width:1000px;
+            height:700px;
+            border : 20px dashed black;
+            padding : 50px;
+            background-image: url(img/tree.jpg);
+            /* 
+                no-repeat : 반복을 안함
+                repeat-x : 가로방향 반복
+                repeat-y : 세로방향 반복
+                repeat : 가로세로 반복
+            */
+            background-repeat: no-repeat;
+            /* 
+                cover : 가로 세로 중 작은 비율로 계산해서
+                         전부 채움(이미지가 잘림, 가로 세로 중 작은 애 
+                         기준으로)
+                         단점 = 이미지가 잘림
+            */
+            /* background-size: cover; */
+            /* 
+                contain : 가로 세로 중 큰 비율로 계산해서 채움,
+                            이미지가 영역 전체를 채우지는 못함
+            */
+            /* background-size: contain; */
+            background-size: 300px;
+            /* 
+                배경이미지 위치 잡을 때 px, % 단위로 좌표 설정
+                키워드를 이용해서 top(아래로) center(가운데) bottom(아래) 
+                right(오른쪽) left
+                background-position: top center;
+                위, 가운데로 정렬
+            */
+            /* padding-box, border-box, content-box */
+            background-position: top center;
+            background-origin: padding-box;
+            /* 투명도 설정 */
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
