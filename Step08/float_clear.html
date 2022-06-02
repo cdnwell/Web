@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float clear</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            border:1px solid black;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: blue;
+        }
+        .box3{
+            background-color: blueviolet;
+            width: 300px;
+            height: 200px;
+        }
+        .container{
+            width: 1200px;
+            margin: 0px auto;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        /* 
+            float를 안쓴 것은 딸려올라감 (겹침)
+            float 뒤에있는 것 까지 땡겨서 가져감
+        */
+        .clear{
+            /* 
+                float속성에 딸려올라가지 않고 float로 배치된 것을
+                다음 영역으로 배치해준다.
+                left, right, both
+                주로 both를 씀
+            */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1 left"></div>
+        <div class="box2 right"></div>
+        <div class="box3 clear"></div>
+    </div>
+</body>
+</html>

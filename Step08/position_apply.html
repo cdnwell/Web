@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+        /* 
+        relative나 absolute나 등등... 해주어야
+        relative 하는 이유 : 안의 div가 위치 잡을 수 있게 초기화
+        */
+        .container{
+            width: 1200px;
+            height: 600px;
+            border: 1px solid black;
+            margin: 0 auto;
+            position: relative;
+        }
+        /* 
+        static (기본값) 일렬로 아래로
+        */
+        .item{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            top: 100px;
+            left: 100px;
+        }
+        /* 
+            static은 빈공간으로 딸려 올라감
+            첫번째 박스 absolut -> 두번째부터 차례로 올라감
+        */
+        .absolute{
+            position:absolute;
+        }
+        
+        .fixed{
+            position: fixed;
+        }
+        /* 
+            상대좌표 기준으로 잡힘
+            현재 것 자기 위주로
+        */
+        .relative{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item absolute">
+            <h2>제목 - 1</h2>
+            <p>내용</p>
+        </div>
+        <div class="item fixed">
+            <h2>제목 - 2</h2>
+            <p>내용</p>
+        </div>
+        <div class="item relative">
+            <h2>제목 - 3</h2>
+            <p>내용</p>
+        </div>
+    </div>  
+</body>
+</html>
