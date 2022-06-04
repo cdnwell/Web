@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sementic tag</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            /* 
+            sementic 태그는 block 태그이다.
+            */
+            width: 1200px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 0 auto;
+            background-color: coral;
+        }
+        nav{
+            width: 1200px;
+            height: 50px;
+            border: 1px solid black;
+            margin: 0 auto;
+            background-color: brown;
+        }
+        section{
+            width: 800px;
+            border:1px solid black;
+            background-color: cornflowerblue;
+            /* 
+                float : left;
+                margin : 0 auto;
+                안됨 float가 우선이기 때문에
+            */
+            float: left;
+            height: 400px;
+            box-sizing: border-box;
+        }
+        aside{
+            width: 400px;
+            border:1px solid black;
+            background-color: burlywood;
+            float: left;
+            height: 400px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1200px;
+            /* 
+                깨져서 밑으로 넘어감
+            */
+            margin: 0 auto;
+        }
+        /* 
+            footer 가 땡겨서 본문 옆에 붙은이유
+            float 때문에
+        */
+        footer{
+            clear:both;
+            width: 1200px;
+            height: 100px;
+            border: 1px black solid;
+            background-color: darkgoldenrod;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>웹페이지에서 맨 윗부분, 머리글, 제목영역</header>
+    <nav>하이퍼 링크 모음, 주로 메뉴영역</nav>
+    <!-- header가 제일 위에 나올 경우가 많음 -->
+    <div class="container">
+    <section>
+        본문 영역
+        <article>본문 내용 영역</article>
+        <!-- article은 일반적으로 section 안에 나오고 여러개 가능 -->
+        <!-- 본문도 여러개 나올 수 있다. -->
+    </section>
+    <aside>본문 외적인 내용, 광고영역, section과 상관없는 내용</aside>
+    </div>
+    <footer>웹페이지에서 맨 아래부분, 꼬리말, 
+        copy right, 사업자 정보, 개인정보 처리방침, 고객센터 정보
+        위 사항은 법적으로 써야 한다. 안쓰면 벌금
+    </footer>
+    <!-- 시멘틱 태그 6개 -->
+</body>
+</html>

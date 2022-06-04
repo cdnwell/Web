@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width: 1200px;
+            height: 200px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        ul{
+            width: 1200px;
+            margin: 0 auto;
+            border: 1px solid black;
+            list-style-type: none;
+        }
+        li{
+            display: inline-block;
+            padding: 15px 0;
+            padding-left: 30px;
+            margin-left: 30px;
+        }
+        .container{
+            width: 1200px;
+            height: 600px;
+            margin: 0 auto;
+            border: 1px solid black;
+            box-sizing: content-box;
+        }
+        section{
+            width: 900px;
+            float: left;
+        }
+        .article_top{
+            margin-top: 8px;
+            width: 900px;
+            height: 260px;
+            box-sizing: border-box;
+        }
+        article{
+            float: left;
+            border: 1px solid black;
+            display: inline-block;
+            width: 300px;
+            height: 260px;
+            box-sizing: border-box;
+        }
+        aside{
+            float: left;
+            box-sizing: border-box;
+            width: 300px;
+            height: 600px;
+            border: 1px solid black;
+        }
+        footer{
+            width: 1200px;
+            height: 200px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        .logo{
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-top: 25px;
+            border: 1px solid black;
+        }
+        .company{
+            width: 250px;
+            height: 150px;
+            float: right;
+            margin-top: 25px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>header 제목 영역</h2>
+    </header>
+    <ul>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+        <li><a href="#">메뉴5</a></li>
+    </ul>
+    <div class="container">
+        <section>
+            <h2>section 제목 영역</h2>
+            <div class="article_top">
+                <article>
+                    <h4>article title</h4>
+                    <p>article content</p>
+                </article>
+                <article>
+                    <h4>article title</h4>
+                    <p>article content</p>
+                </article>
+                <article>
+                    <h4>article title</h4>
+                    <p>article content</p>
+                </article>
+            </div>
+            <div class="article_bottom">
+                <article>
+                    <h4>article title</h4>
+                    <p>article content</p>
+                </article>
+                <article>
+                    <h4>article title</h4>
+                    <p>article content</p>
+                </article>
+                <article>
+                    <h4>article title</h4>
+                    <p>article content</p>
+                </article>
+            </div>
+            
+        </section>
+        <aside>
+            <h2>aside title</h2>
+        </aside>
+    </div>
+    <footer>
+        <div class="logo">logo</div>
+        <div class="company">company info</div>
+    </footer>
+</body>
+</html>

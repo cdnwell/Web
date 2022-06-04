@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: #b7b7b7;
+            width: 1200px;
+            
+            margin : 0 auto;
+            border: 1px solid black;
+            padding:  20px 50px;
+            box-sizing: border-box;
+        }
+        footer{
+            background-color: lightslategrey;
+            width: 1200px;
+            height: 200px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        .logo{
+            width: 200px;
+           
+            float: left;
+            
+        }
+        .form_tag{
+            margin-top: 55px;
+            float: right;
+        }
+        .btn_search{
+            width: 100px;
+            height: 50px;
+            border-radius: 5px;
+            font-size:20px;
+            
+        }
+        .text_search{
+            width: 300px;
+            height: 50px;
+            border-radius: 5px;
+            font-size:20px;
+            
+            margin: 20px;
+        }
+        
+        .header_container{
+            display: inline-block;
+            width: 100%;
+        }
+        .menu_ul{
+            width: 1200px;
+            background-color: cadetblue;
+            height: 50px;
+            text-align: center;
+            display: inline-block;
+        }
+        .menu_li{
+            display: inline-block;
+        }
+        .menu_link{
+            display: inline-block;
+            padding: 14px 50px;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+        }
+        .menu_div{
+            width: 1200px;
+            margin: 0 auto;
+        }
+       .section_header{
+           width: 1200px;
+           height: 600px;
+           border: 1px solid black;
+           margin: 0 auto;
+       }
+       .aside_left{
+           width: 200px;
+           height: 500px;
+           float: left;
+           background-color: dodgerblue;
+           margin : 50px 25px;
+
+       }
+       .section_main{
+           float: left;
+           width: 750px;
+           height: 600px;
+           box-sizing: border-box;
+           background-color: #b7b7b7;
+       }
+       .aside_right{
+            margin: 20px 15px;
+            background-color: darkkhaki;
+            width: 170px;
+            height: 100px;
+            float: right;
+            position: relative;
+            display: inline-block;
+       }
+       .aside_right_top{
+           margin-top: 35px;
+       }
+       nav{
+           width: 1200px;
+           background-color: rgb(172, 172, 255);
+           margin: 0 auto;
+           
+           text-align: center;
+       }
+       ul{
+           font-size: 0;
+           list-style-type: none;
+       }
+       li{
+           display: inline-block;
+       }
+       /* 
+       a:link --> main앵커, 하이퍼링크 앵커 두가지 종류의
+       a태그가 있다. href --> a:link
+       a:visited --> 내가 방문한 적이 있는 상태
+       link,visted 두가지는 평소에 웹을 열었을 때 보이는 것
+       link,visted --> 하이퍼링크에만 있는 선택자
+       */
+       a:link,a:visited{
+           
+           color: black;
+           font-weight: bold;
+           display: inline-block;
+           width: 150px;
+           padding: 10px 0px;
+           font-size: 20px;
+           text-decoration: none;
+       }
+       a:hover{
+           /* 
+            a:hover--> 마우스가 올라갔을 때
+           */
+           background-color: #5a5959;
+       }
+       a:active{
+           background: none;
+       }
+       h3{
+        margin: 30px 0px 10px 20px
+       }
+       .article_div{
+           width: 130px;
+           height: 180px;
+            border: 1px black solid;
+            display: inline-block;
+            padding: 5px 5px;
+       }
+       .article_img{
+           width: 130px;
+           height: 130px;
+       }
+       .article_art{
+           width: 130px;
+            /* white-space: pre-line; */
+            height: 48px;
+            word-break: break-all;
+            overflow: hidden;
+            white-space: pre-wrap;
+            text-overflow: ellipsis;
+       }
+       .article_div_container1{
+           margin-left: 9px;
+           margin-top: 17px
+       }
+       .footer_p_1{
+        margin-top: 50px;
+        margin-left:260px;
+        float: left;
+        color: white;
+        
+       }
+       .footer_p_2{
+        margin-top: 70px;
+        margin-left: 100px;
+        float: left;
+        color: white;
+       }
+       footer ul{
+        width: 1200px;
+        height: auto;
+        display: inline-block;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 0;
+       }
+       footer ul li{
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+       }
+       .footer_info:link,.footer_info:visited{
+           color: white;
+           font-size: 12px;
+           font-weight: bold;
+           width: 60px;
+       }
+       .footer_info:hover{
+       
+        background: none;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <img src="img/logo.jpg" class="logo">
+            <div class="form_tag">
+            <input type="text" class="text_search" placeholder="검색어를 입력하세요">
+            <button class="btn_search">Button</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+       
+            <ul>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+                <li><a href="#">메뉴5</a></li>
+            </ul>
+       
+    </nav>
+    <section class="section_header">
+        <aside class="aside_left"></aside>
+        <section class="section_main">
+            <h3>article 제목</h3>
+            <div class="article_div_container1">
+            <div class="article_div">
+                <img src="../Step07/img/tree.jpg" class="article_img">
+                <article class="article_art">Lorem ipsum dolor sit amet consectetur, 
+                     porro nesciunt iste minima aliquid facilis repellat!</article>
+            </div>
+            <div class="article_div">
+                <img src="../Step07/img/tree.jpg" class="article_img">
+                <article class="article_art">Lorem ipsum dolor sit amet consectetur, 
+                     porro nesciunt iste minima aliquid facilis repellat!</article>
+            </div>
+            <div class="article_div">
+                <img src="../Step07/img/tree.jpg" class="article_img">
+                <article class="article_art">Lorem ipsum dolor sit amet consectetur, 
+                     porro nesciunt iste minima aliquid facilis repellat!</article>
+            </div>
+            <div class="article_div">
+                <img src="../Step07/img/tree.jpg" class="article_img">
+                <article class="article_art">Lorem ipsum dolor sit amet consectetur, 
+                     porro nesciunt iste minima aliquid facilis repellat!</article>
+            </div>
+            <div class="article_div">
+                <img src="../Step07/img/tree.jpg" class="article_img">
+                <article class="article_art">Lorem ipsum dolor sit amet consectetur, 
+                     porro nesciunt iste minima aliquid facilis repellat!</article>
+            </div>
+            </div>
+            <br>
+            <h3>article 제목</h3>
+            <div class="article_div_container1">
+            <div class="article_div">
+                <img src="../Step07/img/tree.jpg" class="article_img">
+                <article class="article_art">Lorem ipsum dolor sit amet consectetur, 
+                     porro nesciunt iste minima aliquid facilis repellat!</article>
+            </div>
+            <div class="article_div">
+                <img src="../Step07/img/tree.jpg" class="article_img">
+                <article class="article_art">Lorem ipsum dolor sit amet consectetur, 
+                     porro nesciunt iste minima aliquid facilis repellat!</article>
+            </div>
+            <div class="article_div">
+                <img src="../Step07/img/tree.jpg" class="article_img">
+                <article class="article_art">Lorem ipsum dolor sit amet consectetur, 
+                     porro nesciunt iste minima aliquid facilis repellat!</article>
+            </div>
+            <div class="article_div">
+                <img src="../Step07/img/tree.jpg" class="article_img">
+                <article class="article_art">Lorem ipsum dolor sit amet consectetur, 
+                     porro nesciunt iste minima aliquid facilis repellat!</article>
+            </div>
+            <div class="article_div">
+                <img src="../Step07/img/tree.jpg" class="article_img">
+                <article class="article_art">Lorem ipsum dolor sit amet consectetur, 
+                     porro nesciunt iste minima aliquid facilis repellat!</article>
+            </div>
+            </div>
+        </section>
+        <aside class="aside_right aside_right_top"></aside>
+        <aside class="aside_right"></aside>
+        <aside class="aside_right"></aside>
+        <aside class="aside_right"></aside>
+    </section>
+    <footer>
+        <p class="footer_p_1">
+            회사명 : OOO OOOO <br>
+            대표 : OOO <br>
+            사업자번호 : OOO-OOOO-OOOO <br>
+            통신판매업신고번호 : OOO-OOO-OOOO <br>
+        </p>
+        <p class="footer_p_2">
+            고객센터 연락처 : OO-OOOO-OOOO <br>
+            담당자 이메일 : email_id@email.com
+        </p>
+        <ul>
+            <li><a href="#" class="footer_info">이용약관</a></li>
+            <li><a href="#" class="footer_info">운영방침</a></li>
+            <li><a href="#" class="footer_info">오시는길</a></li>
+            <li><a href="#" class="footer_info">고객센터</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
