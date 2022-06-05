@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width: 1200px;
+            height: 200px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        ul{
+            width: 1200px;
+            
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid black;
+        }
+        li{
+            display: inline-block;   
+        }
+        li a{
+            width: 150px;
+            color: black;
+            display: inline-block;
+            
+            text-decoration: none;
+            padding: 20px;
+            
+        }
+        
+        .container{
+            width: 1200px;
+            height: 600px;
+            margin: 0 auto;
+            border: 1px solid black;
+            box-sizing: content-box;
+            font-size: 0px;
+
+        }
+        section{
+            width: 900px;
+            height: 600px;
+            display: inline-block;
+            
+        }
+        article{
+            box-sizing: border-box;
+            border: 1px solid black;
+            
+            display: inline-block;
+            margin-top: 5px;
+            width: 300px;
+            height :250px;
+            font-size: 16px;
+        }
+        aside{
+            width: 300px;
+            height: 600px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            font-size: 20px;
+            float: right;
+        }
+        .article_top{
+            width: 900px;
+            height: 250px;
+            box-sizing: border-box;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .article_bot{
+            width: 900px;
+            height: 250px;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+        section h3{
+            font-size: 24px;
+        }
+        footer{
+            width: 1200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        .logo{
+            float: left;
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            margin-top: 25px;
+        }
+        .company_info{
+            width: 250px;
+            height: 150px;
+            float: right;
+            border: 1px solid black;
+            margin-top: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Header 제목 영역</h3>
+    </header>
+    <ul>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+        <li><a href="#">메뉴5</a></li>
+    </ul>
+    <div class="container">
+        <section>
+            <h3>Seciont 제목 영역</h3>
+            <div class="article_top">
+            <article>
+                <h5>article 제목</h5>
+                <p>aritcle 내용</p>
+            </article>
+            <article>
+                <h5>article 제목</h5>
+                <p>aritcle 내용</p>
+            </article>
+            <article>
+                <h5>article 제목</h5>
+                <p>aritcle 내용</p>
+            </article>
+        </div>
+        <div class="article_bot">
+            <article>
+                <h5>article 제목</h5>
+                <p>aritcle 내용</p>
+            </article>
+            <article>
+                <h5>article 제목</h5>
+                <p>aritcle 내용</p>
+            </article>
+            <article>
+                <h5>article 제목</h5>
+                <p>aritcle 내용</p>
+            </article>
+        </div>
+        </section>
+        <aside>
+            <h3>aside 타이틀</h3>
+        </aside>
+    </div>
+    <footer>
+        <div class="logo">
+            logo 제목
+        </div>
+        <div class="company_info">company 정보</div>
+    </footer>
+</body>
+</html>
