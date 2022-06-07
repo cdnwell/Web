@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            padding: 50px;
+            font-size: 24px;
+            border: 1px solid black;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
+            /* grid-template-rows : (첫번째_줄_속성) (두번째 줄 속성) */
+            /* grid-template-rows: minmax(200px, auto) minmax(200px, auto); */
+            /* grid-template-rows : repeat(auto-fit, minmax(200px, auto)); 
+                auto-fit이 세로길이 못잡음
+            */
+            grid-template-rows : repeat(3, minmax(200px, auto));
+            /* grid-column-gap: 30px;
+            grid-row-gap: 30px; 요즘에는 이걸로 쓰지 않는다. */
+            grid-gap: 60px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+</html>

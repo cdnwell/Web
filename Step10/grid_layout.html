@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            padding: 10px;
+            border: 1px solid black;
+        }
+         .container{
+            width: 1200px;
+            border: 1px solid black;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 350px 350px 350px 150px;
+            grid-template-rows: 150px 50px 50px 200px 200px 50px 100px 50px;
+            grid-template-areas: 
+                "box1 box1 box1 box1"
+                "box2 box2 box2 box2"
+                "box11 box11 box11 box3"
+                "box4 box5 box6 box3"
+                "box7 box8 box9 box3"
+                "box10 box10 box10 box10"
+                "box12 box13 box14 box14"
+                "box15 box15 box15 box15"
+            ;
+         }
+        .box1{
+            background-color: red;
+            grid-area: box1;
+        }
+        .box2{
+            background-color: blue;
+            grid-area: box2;
+        }
+        .box3{
+            background-color: cadetblue;
+            grid-area: box3;
+        }
+        .box4{
+            background-color: blueviolet;
+            grid-area:box4;
+        }
+        .box5{
+            background-color: darkgoldenrod;
+            grid-area: box5;
+        }
+        .box6{
+            background-color: darkslateblue;
+            grid-area: box6;
+        }
+        .box7{
+            background-color: darkkhaki;
+            grid-area: box7;
+        }
+        .box8{
+            background-color: chartreuse;
+            grid-area: box8;
+        }
+        .box9{
+            background-color: chocolate;
+            grid-area: box9;
+        }
+        .box10{
+            background-color: aqua;
+            grid-area: box10;
+            border-bottom: none;
+        }
+        .box11{
+            background-color: coral;
+            grid-area: box11;
+        }
+        .box12{
+            background-color: darkorange;
+            grid-area : box12;
+           
+        }
+        .box13{
+            background-color: aqua;
+            grid-area : box13;
+            border-top: none;
+            border-bottom: none;
+        }
+        .box14{
+            background-color: darkgray;
+            grid-area : box14;
+        }
+        .box15{
+            background-color: aqua;
+            grid-area : box15;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item box1"><h3>헤더영역</h3></div>
+        <div class="item box1"><h3>헤더영역</h3></div>
+        <div class="item box1"><h3>헤더영역</h3></div>
+        <div class="item box1"><h3>헤더영역</h3></div>
+        <div class="item box2">2</div>
+        <div class="item box2">2</div>
+        <div class="item box2">2</div>
+        <div class="item box3">3</div>
+        <div class="item box3">3</div>
+        <div class="item box3">3</div>
+        <div class="item box4">4</div>
+        <div class="item box5">5</div>
+        <div class="item box6">6</div>
+        <div class="item box7">7</div>
+        <div class="item box8">8</div>
+        <div class="item box9">9</div>
+        <div class="item box10">10</div>
+        <div class="item box10">10</div>
+        <div class="item box10">10</div>
+        <div class="item box10">10</div>
+        <div class="item box11">11</div>
+        <div class="item box11">11</div>
+        <div class="item box11">11</div>
+        <div class="item box12">12</div>
+        <div class="item box13">13</div>
+        <div class="item box14">14</div>
+        <div class="item box14">14</div>
+        <div class="item box15">15</div>
+        <div class="item box15">15</div>
+        <div class="item box15">15</div>
+        <div class="item box15">15</div>
+    </div>
+</body>
+</html>

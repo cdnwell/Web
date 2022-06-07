@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 50px;
+            font-size: 0px
+        }
+        #kind{
+            font-size: 16px;
+            padding : 5px 0;
+            padding-bottom: 6px;
+            border-radius: 0;
+            outline: none;
+        }
+        #kind:focus{
+            outline: none;
+        }
+        .search{
+            padding-top :6px;
+            padding-bottom : 6px;
+            background-image: url(img/KakaoTalk_20220607_113956103.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 20px;
+            background-position-x: 4px;
+            padding-left: 29px;
+            font-size: 16px;
+            border-radius: 0;
+            border: 1px solid black;
+        }
+        .search:focus{
+            border-radius: 0;
+            outline: none;
+            border: 1px solid black;
+        }
+        button{
+            border: none;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <select id="kind">
+            <option value="title">제목</option>
+            <option value="id">아이디</option>
+            <option value="content">내용</option>
+        </select>
+        <input type="text" class="search" placeholder="검색어">
+        <button>검색</button>
+    </div>
+</body>
+</html>
