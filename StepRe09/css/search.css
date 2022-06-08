@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+select{
+    padding: 5px 0;
+    float: left;
+    border-radius: 0;
+}
+
+.text_box{
+    padding: 6px 0;
+    border-radius: 0;  
+    border: 1px solid black;
+    padding-left: 30px;
+    background-image: url(../img/KakaoTalk_20220607_113956103.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+    background-position-x: 5px;
+}
+.text_box:focus{
+    outline: none;
+}
+
+button{
+    padding: 2px 5px;
+    background-color: white;
+    border: none;
+}
+button:active{
+    border-radius: 5px;
+    background-color: #e9e9e9;
+}
+
+
+.radio_box > input{
+    width: 0px;
+}
+.radio_box label{
+    padding-left: 20px;
+    background-image: url(../img/radio_unchecked.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px;
+}
+.radio_box input:checked + label{
+    padding-left: 20px;
+    background-image: url(../img/radio_checked.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px;
+}
