@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 남는 공간에 맞춰서 남는 공간 처리 */
+        /* 메인 축 방향 정렬 */
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .flex_container{
+            width: 1200px;
+            border: 1px solid black;
+            padding:10px;
+        }
+        .flex_container div{
+            border: 1px solid blue;
+            padding:10px;
+        }
+        .box{
+            margin: 5px;
+            width: 70px;
+            background-color: darkblue;
+            color: white;
+        }
+        .flex_row{
+            display: flex;
+            flex-direction: row;
+        }
+        .align1{
+            /* 정렬 시작 지점부터 놓아야 한다. */
+            /* main축 시작 지점 */
+            justify-content: flex-start;
+        }
+        .align2{
+            /* 메인축 끝점 기준으로 배치 */
+            /* justify : 행의 끝을 맞추다. 옳다고하다  */
+            justify-content :flex-end;
+        }
+        .align3{
+            /* 메인축 가운데 기준으로 배치 */
+            justify-content :center;
+        }
+        .align4{
+            /* 메인축 같은 간격으로 배치 */
+            /* 컨텐츠와 컨텐츠 사이 길이만 맞춰줌 양 끝 간격은 동일하게 */
+            justify-content : space-around;
+        }
+        .align5{
+            /* 메인축 양끝에 배치 후 가운데에는 같은 간격으로 배치 */
+            justify-content : space-between;
+        }
+        .flex_column{
+            border: 1px solid blue;
+            height: 1000px;
+            padding: 10px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <div class="flex_row align1">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+        <div class="flex_row align2">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+        <div class="flex_row align3">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+        <div class="flex_row align4">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+        <div class="flex_row align5">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+    </div>
+    <div class="flex_column">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+</body>
+</html>

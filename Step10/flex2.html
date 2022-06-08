@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex_container{
+            width: 1200px;
+            border: 1px solid black;
+            padding:10px;
+
+        }
+        .flex_container div{
+            border: 1px solid blue;
+            padding: 10px;
+        }
+        /* 일부러 넘어가게끔 만듦, 넘어갈 때 어떤 상황이 나오는지 보기 위해 */
+        .box{
+            margin: 5px;
+            width: 300px;
+            background-color: cadetblue;
+            color:white;
+            text-align: center;
+        }
+        /* flex는 동일한 사이즈로 줄인다. 설정값보다도 작게 줄인다. 여러개가 
+        나열 될 시에 */
+        .flex_row_1{
+            display: flex;
+            flex-direction: row;
+            /* wrap은 배치할 공간이 모자르면 다음줄에 배치한다. */
+            flex-wrap: wrap;
+        }
+        .flex_row_2{
+            display: flex;
+            flex-direction: row;
+            /* wrap이라고 쓰면 배치할 공간의 다음 줄 */
+            /* 다음줄로 보내겠다. reverse이니깐 거꾸로 */
+            /* 쓸일은 잘 없다 */
+            flex-wrap: wrap-reverse;
+        }
+        .flex_row_3{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .flex_row_4{
+            display: flex;
+            /* direction이 먼저 나오고 wrap 속성을 표기한다. */
+            flex-direction: row nowrap;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <div class="flex_row_1">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+        <div class="flex_row_2">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+        <div class="flex_row_3">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+        <div class="flex_row_4">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout homepage</title>
+    <style>
+        header{
+            width: 100%;
+            background-color: black;
+        }
+        header ul{
+            text-align: center;
+        }  
+        header li{
+            display: inline-block;
+            text-align: center;
+        }
+        header a{
+            text-decoration: none;
+            width: 200px;
+            display: inline-block;
+            font-size: 22px;
+            color: white;
+            padding: 30px;
+        }
+        .container_main{
+            width: 1000px;
+            margin: 0 auto;
+            height: 600px;
+            text-align: center;
+        }
+        h1{
+            margin: 0px;
+        }
+        .container_main > p{
+            margin: 0px;
+        }
+        section{
+            background-image: url(img/island.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 510px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .article_box{
+            display: flex;
+            flex-direction: row;
+        }
+        .article_left{
+            width: 300px;
+            height: 300px;
+            margin: 0 50px;
+            background-color: rgba( 255, 255, 255, 0.5 );
+            box-sizing: border-box;
+        }
+        .article_right{
+            width: 300px;
+            height: 300px;
+            margin: 0 50px;
+            background-color: rgba( 255, 255, 255, 0.5 );
+            box-sizing: border-box;
+        }
+        article > h2 {
+            font-size: 40px;
+            margin-top: 90px
+        }
+        article > p{
+            font-size: 14px;
+        }
+        article > button:checked{
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: rgba( 255, 255, 255, 0.5 );
+        }
+        article > button{
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background-color: rgba( 255, 255, 255, 0 );
+            border: 1px solid black;
+        }
+        .article_right > button{
+            margin-top: 15px;
+        }
+        article > button:active{
+            background-color: rgba( 255, 255, 255, 0.5 );
+        }
+
+        footer{
+            width: 100%;
+            background-color: black;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        footer > ul{
+            list-style-type: none;
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        footer li{
+            color: white;
+            font-size: 12px;
+        }
+        .container_main > p{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Share Guide</a></li>
+            <li><a href="#">Traveler</a></li>
+            <li><a href="#">Guide</a></li>
+            <li><a href="#">Mypage</a></li>
+        </ul>
+    </header>
+    <div class="container_main">
+        <h1>Share Guide</h1>
+        <p>- welcome to share guide -</p>
+        <section>
+            <div class="article_box">
+            <article class="article_left">
+                <h2>Traveler</h2>
+                <p>
+                    다양한 가이드들에게 <br>
+                    가고자 하는 동네를 소개해주세요!
+                </p>
+                <button> 보러가기</button>
+            </article>
+            <article class="article_right">
+                <h2>Guide</h2>
+                <p>
+                    자신의 동네를 소개해주세요!
+                </p>
+                <button> 보러가기</button>
+            </article>
+        </div>
+        </section>
+    </div>
+    <footer>
+        <ul>
+            <li>Copyright. ShareGuide Management Allrights reserved</li>
+            <li>OOO @gamail.com OOO @gamail.com OOO @gamail.com</li>
+        </ul>
+    </footer>
+</body>
+</html> 

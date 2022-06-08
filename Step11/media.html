@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            width: 100%;
+            height: 500px;
+            background-color: red;
+        }
+        /* pc, mobile <- 총칭 해서 screen */
+        /* max-width:1200px <- screen이 화면이면서 화면크기가 1200px때 까지는
+        중괄호 안에 값으로 적용하겠다. */
+        /* media 쿼리 밖에 있는 것은 기본디자인 */
+        @media screen and (max-width:1200px){
+            .container{
+                background-color: coral;
+            }
+        }
+        @media screen and (max-width:760px){
+            .container{
+                background-color: green;
+            }
+        }
+        @media screen and (max-width:360px){
+            .container{
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flex_container{
+            width: 1200px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        /* 
+            flex를 할 때 어떻게 잡히는지 보기위해 margin 설정
+        */
+        .box{
+            margin: 5px;
+            width: 100px;
+            background-color: cadetblue;
+            color: white;
+        }
+        .flex_container div{
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .flex_row{
+            display: flex;
+            /* 가로 방향으로 할건지 세로방향으로 할 건지 정해주어야 함 중요하다 */
+            flex-direction: row;
+        }
+        .flex_row_reverse{
+            display: flex;
+            /* 오르쪽에서 부터 거꾸로 */
+            flex-direction: row-reverse;
+        }
+        .flex_colum{
+            /* 위에서 부터 아래로 배치 */
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 500px;
+        }
+        .flex_colum_reverse{
+            /* 아래에서부터 위로 배치 */
+            display: flex;
+            flex-direction: column-reverse;
+            width: 400px;
+            height: 500px;
+        }
+        /* 플렉스는 플렉스 안에 플렉스를 넣어 사용 */
+        /* 그리드보다 복잡해보이지만 오히려 더 편하다. */
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <div class="flex_row">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+        <div class="flex_row_reverse">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+        <div class="flex_colum">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+        <div class="flex_colum_reverse">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+    </div>
+</body>
+</html>

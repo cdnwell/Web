@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-image: url(img/waterfall.jpg);
+            background-size: 100% 100%;
+            float: left;
+            margin-left: 250px;
+            margin-top: 50px;
+        }
+        .s1{
+            /* scaleX : x축으로 두배 늘린다. */
+            transform: scaleX(2);
+        }
+        .s2{
+            /* scaleY : y축으로 두배 늘린다. */
+            transform: scaleY(2);
+        }
+        .s3{
+            /* scakeZ : z축으로 두배 늘린다.
+                티가 안난다. 앞과 뒤로 늘림
+            */
+            /* rotateX를 적용해도 효과가 안보인다. */
+            /* rotateY를 적용해도 효과가 안보인다. */
+            /* scale은 X, Y 정도만 다룬다. */
+            transform:scaleZ(2) rotateY(40deg);
+        }
+        .s4{
+            /* scale(x, y) x축으로 x만큼 늘리고 y축으로 y만큼 늘린다. */
+            transform : scale(2,1.5);
+        }
+    </style>
+</head>
+<body>
+     <div class="s1"></div>   
+     <div class="s2"></div>   
+     <div class="s3"></div>   
+     <div class="s4"></div>   
+</body>
+</html>

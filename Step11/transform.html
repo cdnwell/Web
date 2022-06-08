@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            border: 1px solid black;
+            background-image: url(img/waterfall.jpg);
+            background-size: 100% 100%;
+        }
+        /* div 태그이면서 클래스 속성이 t1인 것을 선택한다. */
+        /* 종속된 태그 찾는 방법 t1이 아이디라면 . 대신에 # 을 쓰면된다. */
+        div.t1{
+            /* rotate, translate, scale정도만 쓴다 */
+            transform : translate(100px,100px);
+        }
+        div.t2{
+            /* 
+            translate(x좌표,y좌표)
+            각 값을 더해준다.
+            */
+
+            /* rotateX -> x축을 기준으로 회전시킨다. */
+            /* transform 다음 속성들은 띄어쓰기로 구분한다. */
+            transform: translate(200px,0px) rotateX(130deg);
+        }
+        /* rotateY -> Y축을 잡고 돌린다. 각도에 따라 그림이 압축된다.  */
+        /* rotateX -> X축을 잡고 돌린다. 각도에 따라 그림이 압축된다.  */
+        div.t3{
+            transform: rotateY(40deg);
+        }
+        /* rotateZ -> Z축을 잡고 돌린다. 각도에 따라 그림이 정면에서 돌아간다. */
+        div.t4{
+            transform:rotateZ(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="t1"></div>
+    <div class="t2"></div>
+    <div class="t3"></div>
+    <div class="t4"></div>
+</body>
+</html>

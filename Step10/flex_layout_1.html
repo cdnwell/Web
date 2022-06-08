@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex layout1</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .container{
+            width: 1200px;
+            height: auto;
+            margin: 0 auto;
+            align-content: flex-start;
+            justify-content: center;
+            
+        }
+        header{
+            width: 1200px;
+            /* margin: 0 auto; */
+            height: 200px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        ul{
+            
+            width: 1200px;
+            margin: 0;
+            height: auto;
+            border: 1px solid black;
+            /* text-align: center; */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        li{
+            display: inline-block;
+            /* text-align: center; */
+        }
+        li > a{
+            display: inline-block;
+            width: 150px;
+            color: black;
+            padding: 20px 0;
+            text-decoration: none;
+        }
+        .container_main{
+            width: 1200px;
+            height: 600px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Header 제목영역</h2>
+        </header>
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+            <li><a href="#">menu5</a></li>
+        </ul>
+        <div class="container_main">
+            <section>
+                <h3>section 제목 영역</h3>
+                <div class="article_top">
+                    <article>
+                        <h4>article 제목영역</h4>
+                        <p>article 내용영역</p>
+                    </article>
+                    <article>
+                        <h4>article 제목영역</h4>
+                        <p>article 내용영역</p>
+                    </article>
+                    <article>
+                        <h4>article 제목영역</h4>
+                        <p>article 내용영역</p>
+                    </article>
+                </div>
+                <div class="article_bot">
+                    <article>
+                        <h4>article 제목영역</h4>
+                        <p>article 내용영역</p>
+                    </article>
+                    <article>
+                        <h4>article 제목영역</h4>
+                        <p>article 내용영역</p>
+                    </article>
+                    <article>
+                        <h4>article 제목영역</h4>
+                        <p>article 내용영역</p>
+                    </article>
+                </div>
+            </section>
+            <aside>
+                <h3>aside 제목 영역</h3>
+            </aside>
+        </div>
+        <footer>
+            <div class="logo">로고</div>
+            <div class="company">회사정보</div>
+        </footer>
+    </div>
+</body>
+</html>
